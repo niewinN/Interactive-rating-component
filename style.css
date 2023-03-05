@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.card {
+    width: 90%;
+    background-color: hsl(213, 20%, 18%);
+    border-radius: 15px;
+    padding: 2em;
+    opacity: 1;
+}
+
+.circle-star {
+    background-color: hsl(215, 11%, 21%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.5rem;
+    margin-bottom: .5em;
+}
+
+.text {
+    font-size: 1.5rem;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1.5em;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(215, 11%, 21%);
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.number .active {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.item .active {
+    color: white;
+}
+
+.number:hover {
+    background-color: hsl(217, 12%, 63%);
+}
+
+.number:hover .item {
+    color: white;
+}
+
+.item {
+    text-decoration: none;
+    color: hsl(217, 12%, 63%);
+    font-size: 1.5rem;
+    transition: color .3s;
+}
+
+.button {
+    width: 100%;
+    padding: .6em;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    transition: background-color .3s, color .3s;
+}
+
+.button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%)
+}
+
+.footer {
+    text-align: center;
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: hsl(25, 97%, 53%);
+}
+
+.second-card {
+    background-color: hsl(213, 20%, 18%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 2em;
+    border-radius: 15px;
+    opacity: 1;
+    z-index: -1;
+}
+
+.second-img {
+    margin-bottom: 2em;
+}
+
+.selected {
+    background-color: hsl(215, 11%, 21%);
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    color: hsl(25, 97%, 53%);
+    margin-bottom: 2em;
+}
+
+.second-title {
+    color:hsl(0, 0%, 100%);
+    font-size: 2.2rem;
+    margin-bottom: 0.5em;
+}
+
+.second-text {
+    font-size: 1.5rem;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+}
