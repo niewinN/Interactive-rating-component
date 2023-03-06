@@ -1,7 +1,16 @@
-const numberList = document.querySelectorAll('.number');
-const items = document.querySelectorAll('.item');
+const numberList = document.querySelectorAll(".number")
+const items = document.querySelectorAll(".item")
 
-const changeBackgroundNumber = () => {
-    numberList.classList.toggle('active')
+const removeBgc = () => {
+    numberList.forEach(number => {
+        number.classList.remove('active')
+    })
 }
 
+numberList.forEach(number =>  {
+    number.addEventListener('click', function() {
+    removeBgc()
+    number.classList.add('active')
+    })
+})
+    

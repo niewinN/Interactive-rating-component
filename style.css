@@ -71,11 +71,16 @@ html {
     transition: background-color .3s;
 }
 
-.number .active {
+.active {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.number.active {
     background-color: hsl(25, 97%, 53%);
 }
 
-.item .active {
+.item.active {
     color: white;
 }
 
