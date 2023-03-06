@@ -172,3 +172,13 @@ html {
         width: 35%;
     }
 }
+
+@media(min-width: 1280px) {
+    .card {
+        width: 30%;
+    }
+
+    .second-card {
+        width: 30%;
+    }
+}
